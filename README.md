@@ -1,6 +1,6 @@
 # How to configure NGROK Tunnel with Supervisor
 * forward port to localhost for ssh, mqtt broker(mosquitto) and node-red
-* First,you're going to install mosquitto and node-red.
+* First, make sure mosquitto and node-red have been installed correctly.
 ## 1.download the latest version of ngrok
 https://ngrok.com/download
 
