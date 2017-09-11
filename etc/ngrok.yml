@@ -1,0 +1,15 @@
+authtoken: 'replace your authtoken form ngrok dashboard'
+region: ap
+log_level: debug
+log: /var/log/ngrok.log
+tunnels:
+  ssh:
+    addr: 22
+    proto: tcp
+  mqtt:
+    addr: 1883
+    proto: tcp
+  node-red:
+    addr: 1880
+    proto: http
+    bind_tls: true
