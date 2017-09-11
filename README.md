@@ -27,3 +27,5 @@ systemctl start supervisor
 ```
 #### To check the status of supervisor controlled daemons, run.
 `supervisorctl status`
+#### Check the dashboard on the ngrok website to see URL.
+https://ngrok.com
