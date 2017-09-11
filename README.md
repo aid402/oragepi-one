@@ -1,4 +1,5 @@
 # How to set up ngrok service
+  forward port to localhost for ssh,mqtt 
 ## 1.download the latest version of ngrok
 https://ngrok.com/download
 
@@ -8,6 +9,17 @@ Choose Linux ARM
 * download and copy ngrok.yml to /etc/
 * copy and paste your authtoken from ngrok dashboard to ngrok.yml
 
+#### or copy and paste this code line by line:
+login as root or run `sudo su`
+```
+apt-get install wget
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip
+cp ngrok /usr/local/bin/
+wget https://github.com/aid402/oragepi-one/blob/master/etc/ngrok.yml
+cp ngrok.yml /etc/
+nano /etc/ngrok.yml    ///copy your authtoken from ngrok dashboard
+```
 ## 2.set up supervisor
 `apt-get install supervisor`
 
