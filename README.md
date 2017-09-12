@@ -26,7 +26,7 @@ nano /etc/ngrok.yml
 `apt-get install supervisor`
 
 #### On to supervisor configuration. Create the configuration file as follows:
-(or copy and paste in /etc/supervisord.conf)
+(or copy and paste in /etc/supervisor/supervisord.conf)
 ```
 [program:ngrok]
 command=/usr/local/bin/ngrok start --all --config=/etc/ngrok.yml
